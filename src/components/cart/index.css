@@ -1,0 +1,128 @@
+
+  .cart-container {
+    width: 100%;
+    width: 1000px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+    padding: 15px 0;
+    list-style: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .item-image {
+    width: 80px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    flex-grow: 1;
+    margin: 0 15px;
+  }
+  
+  .brand {
+    font-size: 14px;
+    color: #666;
+    flex-grow: 0.5;
+    padding-left: 20px;
+  }
+  
+  .price {
+    font-size: 16px;
+    color: #0a57ff;
+    font-weight: bold;
+    padding-right: 50px;
+  }
+  
+  .remove-icon {
+    cursor: pointer;
+    color: #999;
+    transition: color 0.3s ease;
+  }
+  .quantity{
+    display: flex;
+    
+  }
+  
+  .remove-icon:hover {
+    color: red;
+  }
+  .price{
+    display: flex;
+    flex-direction: row;
+  }
+  .quantity p{
+    margin: 10px;
+    border: 1px solid;
+    padding: 5px;
+    font-size: 10px;
+
+  }
+  .cart-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .remove-all{
+    color: blue;
+    font-size: 30px;
+    padding-top: 20px;
+  }
+  .empty-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+ 
+  }
+  .total-purchase {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+    border-radius: 8px;
+   
+  }
+  
+  .total-order {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0a57ff; /* Blue Color */
+    margin: 10px 0;
+  }
+  
+  .total-purchase p {
+    font-size: 18px;
+    color: #555;
+    margin: 5px 0;
+  }
+  .cart-img{
+    width: 200px;
+    height: auto;
+  }

@@ -1,0 +1,169 @@
+/* General styles for the container */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 16px;
+  }
+  
+  .all {
+    color: #475569;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 48px;
+    margin-left: 50px;
+    flex: 1;
+  }
+  /* Loader styles */
+  .loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Filters section */
+  .filters-group-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+  
+  .search-input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .search-input {
+    padding: 10px;
+    width: 200px;
+    font-size: 16px;
+  }
+  
+  .search-icon {
+    font-size: 24px;
+    margin-left: 8px;
+  }
+  
+  .categories-list, .ratings-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .category-item, .rating-item {
+    cursor: pointer;
+    margin-bottom: 8px;
+  }
+  
+  .category-name {
+    font-size: 18px;
+  }
+  
+  .active-category-name {
+    font-weight: bold;
+    color: #4fa94d;
+  }
+  
+  .rating-image {
+    width: 100px;
+    height: 20px;
+    margin-right: 8px;
+  }
+  
+  /* Clear Filters button */
+  .clear-filters-btn {
+    background-color: #4fa94d;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 16px;
+  }
+  
+  /* All products section */
+  .all-products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .product-card {
+    width: 220px;
+    margin: 16px;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+  }
+  .not-found{
+    width: 200px;
+    margin-top: 50px;
+  }
+  
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* Adjusting Filters Group */
+    .filters-group-container {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .search-input {
+      width: 100%;
+      margin-bottom: 8px;
+    }
+  
+    /* Adjust product cards for smaller screens */
+    .all-products {
+      justify-content: center;
+    }
+  
+    .product-card {
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 16px;
+    }
+  
+    .categories-list, .ratings-list {
+      margin-top: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .all {
+      font-size: 24px;
+      margin-left: 16px;
+    }
+  
+    /* Reduce font sizes and increase button size */
+    .category-name {
+      font-size: 16px;
+    }
+  
+    .clear-filters-btn {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+    }
+  
+    .search-input {
+      font-size: 14px;
+    }
+  
+    .search-icon {
+      font-size: 20px;
+    }
+  }
+  
