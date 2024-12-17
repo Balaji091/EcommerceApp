@@ -71,12 +71,16 @@
   cursor: pointer;
 }
 
+
 /* Media query for larger screens */
 @media screen and (min-width: 768px) {
   .website-logo {
     width: 165px;
   }
   .menu-btn {
+    display: none;
+  }
+  .logout-mobile-btn{
     display: none;
   }
 }
@@ -100,12 +104,53 @@
   .logout-desktop-btn{
     display: none;
   }
+  .logout-mobile-btn{
+    display: none;
+  }
   .nav-menu.show {
     display: flex; 
     
     /* Show the menu when 'show' class is added */
   }
 
+  .menu-btn {
+    display: block; /* Show the menu button on mobile */
+    font-size: 24px;
+    color: #0967d2;
+  }
+}
+.logout-mobile-btn {
+  border: none;
+  padding: 0px;
+  background: transparent;
+  display: none; /* Default hidden */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 767px) {
+  .nav-menu {
+    display: none; /* Hide the menu by default */
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .nav-menu li {
+    padding: 20px;
+  }
+  .logout-desktop-btn {
+    display: none; /* Hide desktop logout button on mobile */
+  }
+  .logout-mobile-btn {
+    display: block; /* Show mobile logout button */
+  }
+  .nav-menu.show {
+    display: flex; /* Show the menu when 'show' class is added */
+  }
   .menu-btn {
     display: block; /* Show the menu button on mobile */
     font-size: 24px;
