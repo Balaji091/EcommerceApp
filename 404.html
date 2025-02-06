@@ -1,0 +1,7 @@
+<script type="text/javascript">
+    // Redirect all 404 requests to index.html
+    var pathname = window.location.pathname;
+    if (pathname.startsWith('/EcommerceApp/')) {
+      window.location.replace('/EcommerceApp/index.html' + window.location.search);
+    }
+  </script>
