@@ -4,8 +4,8 @@ import { useNavigate } from 'react-router-dom'
 import Cookies from 'js-cookie';
 class LoginForm extends Component {
   state = {
-    username: '',
-    password: '',
+    username: 'rahul',
+    password: 'rahul@2021',
     errorMsg:' ',
     showSubmitError:false,
   }
